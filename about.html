@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="this is the generics bandpage">
+        <meta name="keywords" content="geneics,bandpage">
+        <meta name="author" content="John Doe">
+
+        <style>
+            @font-face { font-family: "myfont"; src: url(fonts/ROCKYAOE.TTF); }
+            @font-face { font-family: font1; src: url("fonts/1.ttf"); }
+            @font-face { font-family: font2; src: url("fonts/2.ttf"); }
+            @font-face { font-family: font3; src: url("fonts/3.ttf"); }
+           
+            * { font-family: Arial; padding: 0px; margin: 0px; }
+            
+            header { height: 180px; border: none; background-image: url("images/2.jpg"); background-blend-mode: multiply; }
+            header ul { text-align: center; border-bottom: 1px solid white; }
+            header ul li { display: inline-block; margin: 15px 25px; }
+            header ul li a { color: white; text-decoration: none; font-size: 20px; padding: 10px 20px; }
+            header ul li a:hover { background-color: white; color: rgb(114, 64, 194); }
+
+            header h1 { font-family: 'myfont'; font-size: 80px; font-weight: normal; letter-spacing: 10px; text-align: center; color: white; }
+
+            section {border-width: 0px; padding: 15px 50px; }
+            section img { float: left; margin: 20px; border-radius: 50% }
+            .sectiondiv1 { color: black; font-family: 'font1'; font-size: 50px; font-weight: bold; text-align: center; }
+            .sectiondiv2 { color: #777; margin-top: 15px; }
+
+            footer { background-color: darkslateblue; display: flex; justify-content: space-between; align-items: center; }
+            footer p { font-family: 'myfont'; font-size: 50px; color: white; }
+            footer div { width: 200px; }
+            footer img { margin: 0px 10px; width: 30px; height: 30px; background-color: white; border-radius: 5px; cursor: pointer; } 
+
+            @media (max-width: 500px) {
+                section img { width: 220px; height: 300px; float: left; margin: 10px; border-radius: 50% }
+
+                .div1 { color: #f3f3f3; font-family: Arial; font-size: 30px; font-weight: bold; }
+                .div2 li { display: inline-block; margin-right: 15px; }
+                .div2 li a img { width: 30px; }
+            }
+
+            @media (min-width: 501px) and (max-width: 600px) {
+                section img { width: 240px; height: 320px; float: left; margin: 15px; border-radius: 50% }
+
+                .div1 { color: #f3f3f3; font-family: Arial; font-size: 30px; font-weight: bold; }
+                .div2 li { display: inline-block; margin-right: 15px; }
+                .div2 li a img { width: 30px; }
+            } 
+            
+        </style>
+    </head>
+
+    <body lang="en">
+        <header>
+            <ul>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="store.html">STORE</a> </li>
+                <li> <a href="about.html">ABOUT</a> </li>
+            </ul>
+
+            <h1>The Generics</h1>
+
+        </header>
+
+        <section>
+            <div class="sectiondiv1">ABOUT</div>
+            <div class="sectiondiv2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati cumque nobis velit officiis voluptate, laboriosam eaque eius facilis modi reiciendis ipsa numquam architecto placeat eveniet. Repudiandae quidem molestiae odio officia odit blanditiis, at un
+                    de aliquam exercitationem iste provident illo quos, dolore qui. Harum reprehenderit et voluptatibus esse dicta ex fuga velit, quibusdam consequuntur inventore nemo illo, quia neque laborum quidem veniam repudiandae!
+                    <img src="images/6.jpg" alt="CrazyFans" title="CrazyFans" width="300" height="350"> Excepturi natus maxime inventore reprehenderit repellendus et, ipsam harum. Quidem voluptas magni eligendi provident at fugiat repudiandae sit deserunt? Fuga modi totam officiis eligendi facilis consequatur magnam reiciendis aperiam quas dolores quae, accusamus doloremque autem iure illum magni impedit explicabo 
+                    repellat enim. Vitae a temporibus doloribus ad tenetur qui neque minima, voluptate deleniti fuga id. Esse eligendi molestiae ducimus inventore veniam, totam, ad optio quibusdam blanditiis veritatis architecto expedita neque dolorem accusantium incidunt! Accusamus, cum impedit, harum cumque dolor aliquid dicta labore commodi possimus quasi ipsam? Necessitatibus natus fugiat quasi, magni debitis illum doloremque deleniti vero ut sunt nulla voluptatibus neque! Illo ea nobis molestias molestiae, eligendi cumque enim consectetur. Necessitatibus voluptates debitis modi, excepturi eveniet fugiat dicta quaerat quam facere vitae cumque, recusandae commodi nisi iure? Itaque veritatis aut assumenda rem similique laudantium adipisci optio dolor saepe et. Beatae, eveniet fuga eius alias reprehenderit qui dolor minus doloremque consectetur modi iste 
+                    laboriosam at, ex illo tempore. Quae perspiciatis nobis sapiente, beatae eveniet necessitatibus ipsam inventore nam iure vitae maxime at. Beatae incidunt corrupti quam praesentium, ipsam sequi nulla suscipit alias deleniti ut voluptatum atque in aliquid sit magni!
+                    Excepturi suscipit consectetur, maiores et expedita nisi veritatis! Illum, adipisci provident laboriosam non maxime repellendus blanditiis fugiat labore aspernatur beatae. Quisquam eum corporis quaerat aliquam. Doloremque, nam excepturi delectus ad deleniti, culpa, autem harum aspernatur illum beatae velit? Culpa quis molestiae in, nam odio tempore, praesentium sint voluptatum accusantium 
+                    tempora distinctio numquam modi libero quia aliquam suscipit nemo odit dignissimos a dolor iusto rerum doloribus quidem placeat. Minima deserunt atque in, facere praesentium unde, est odit voluptates saepe veritatis officia aspernatur accusamus quia cumque fugit laborum fugiat facilis deleniti eius iste? Possimus laborum labore minima, libero, eligendi corrupti officia rerum debitis voluptas quaerat repudiandae! Excepturi perferendis
+                    necessitatibus consequuntur, pariatur illo architecto facere commodi quas laboriosam modi ratione error. Recusandae, itaque eveniet laborum blanditiis iure distinctio veniam perferendis, pariatur nam harum fuga magnam! Veritatis dolore assumenda doloremque obcaecati corrupti praesentium veniam tempore beatae, amet harum nobis cum error. Vero quia illum, hic quasi unde mollitia quae sint magnam in non aliquid eum nisi ipsa ducimus dolorum libero. 
+                    Debitis dolore culpa obcaecati sequi voluptatem quasi nihil, reprehenderit eaque non laborum eligendi quisquam ratione qui ut illo similique dolores nisi aspernatur nostrum saepe fugiat maxime cumque, optio alias. Rerum quis vel incidunt esse error voluptatum ratione laudantium magni accusantium, ipsa cupiditate, adipisci in excepturi. Illo similique quibusdam tempore distinctio, dolorem voluptate itaque praesentium ullam voluptates architecto iusto cumque at, sint adipisci vel quia aliquam totam.
+                    In eos accusantium magnam quisquam quod mollitia aliquid eum earum voluptatem error doloremque libero id ipsum dolor, culpa ipsa aut ab consequatur incidunt ipsam vel quasi labore, obcaecati enim? Reprehenderit excepturi magni id, sunt sint corrupti voluptate quasi dicta error sequi, ab non facilis voluptatem aliquam? Impedit totam quia accusantium itaque esse magni velit! Blanditiis vero aliquam numquam quidem reprehenderit exercitationem magni provident, eos veniam optio enim error inventore at perferendis nobis praesentium molestias officia explicabo dolorum delectus! Quisquam dicta molestiae sint veritatis repellat 
+                    voluptatem commodi cupiditate atque temporibus ipsam, eligendi quod molestias quis ratione perspiciatis aspernatur corrupti assumenda adipisci illo vitae, recusandae consequuntur deleniti in! Voluptas, est ducimus atque molestias nulla repellat officiis ab pariatur numquam maxime dolore. Quae cum omnis beatae blanditiis dicta maiores laudantium culpa architecto perspiciatis impedit nulla fugit optio exercitationem qui, ad tenetur quidem. Libero soluta cumque alias porro impedit aperiam molestiae saepe, itaque eum atque, rem exercitationem accusantium reprehenderit quas delectus cupiditate aliquid facere vitae maxime quam odit? Qui, delectus. Exercitationem qui nesciunt possimus atque beatae assumenda soluta doloribus in? Aliquid neque officia dicta et aperiam quae pariatur, molestias praesent
+                    ium consequatur unde, facilis eum ex placeat at voluptatum repellendus dolorem suscipit? Mollitia cumque dolores ipsa, iste quia asperiores perspiciatis eius illo tempora nihil, maxime quisquam nesciunt sit nemo soluta corrupti. </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>The Generics</p>
+            <div>
+                <a href="spotify.com" target="_blank"> <img src="icons/spotify logo.png"> </a>
+                <a href="twitter.com" target="_blank"> <img src="icons/twitter logo.png"> </a>
+                <a href="facebook.com" target="_blank"> <img src="icons/facebook logo.png"> </a>
+            </div>
+        </footer>
+    </body>
+</htm>

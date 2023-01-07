@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="this is the generics bandpage">
+        <meta name="keywords" content="geneics,bandpage">
+        <meta name="author" content="John Doe">
+
+        <style>
+            @font-face { font-family: "myfont"; src: url(fonts/ROCKYAOE.TTF); }
+            @font-face { font-family: font1; src: url("fonts/1.ttf"); }
+            @font-face { font-family: font2; src: url("fonts/2.ttf"); }
+            @font-face { font-family: font3; src: url("fonts/3.ttf"); }
+
+            * { font-family: Arial; margin: 0px; padding: 0px; box-sizing: border-box; }
+            header { height: 300px; border: none; background-image: url("images/2.jpg"); background-blend-mode: multiply; }
+            header ul { text-align: center; border-bottom: 1px solid white; }
+            header ul li { display: inline-block; margin: 15px 25px; }
+            header ul li a { color: white; text-decoration: none; font-size: 20px; padding: 10px 20px; }
+            header ul li a:hover { background-color: white; color: rgb(114, 64, 194); }
+
+            header h1 { font-family: 'myfont'; font-size: 80px; font-weight: normal; letter-spacing: 10px; text-align: center; color: white; }
+            header button { font-size: 30px; background-color: transparent; color: white; padding: 8px 30px; border: none; box-shadow: 0px 0px 10px white; border-radius: 5px; display: block; margin: 5px auto; cursor: pointer; }
+            header button a { text-decoration: none; color: white; }
+            header img { width: 60px; height: 60px; display: block; margin: 15px auto; background-color: white; padding: 5px; border-radius: 5px; }
+
+            section h2 { font-family: 'font1'; font-size: 60px; margin-top: 30px; margin-bottom: 20px; text-align: center; }
+            section table { margin: 0px auto; caption-side: bottom; border-spacing: 0px 20px; }
+            section caption { margin: 40px 0px; border: none; color: white; background-image: url("images/0.jpg"); padding: 10px 0px; border-radius: 5px; }
+            section caption a { color: white; text-decoration: none; font-family: monospace; font-size: 20px; font-weight: bold; cursor: pointer; }
+            section table thead th { font-size: 20px; border-left: 3px; border-right: 3px; border: solid darkslateblue; padding: 10px 15px; background-color: darkslateblue; color: white; cursor: pointer; transition: background-color 0.10s; }
+            section table thead th:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+            section table thead th:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+            section table thead th:hover { background-color: white; color: darkslateblue; border: solid darkslateblue; }
+
+            section table tbody { background-color: whitesmoke; }
+            section table tbody td { font-size: 18px; padding: 6px 12px; border: 10px solid whitesmoke; transition: background-color 0.10s; }
+            section table tbody tr td:first-child { font-weight: bold; }
+            section table tbody tr td:last-child { padding: 3px; }
+            section table td button { font-size: 14px; font-weight: bold; padding: 6px 10px; border: none; border-radius: 5px; background-color: rgba(0, 140, 255, 0.651); color: white; cursor: pointer; }
+            section table tbody tr td:hover { background-color: darkslateblue; color: white; border-radius: 5px; cursor: pointer; }
+            section table tbody tr td:last-child:hover { background-color: white; }
+
+            footer { background-color: darkslateblue; display: flex; justify-content: space-between; align-items: center; }
+            footer p { font-family: 'myfont'; font-size: 50px; color: white; }
+            footer div { width: 200px; }
+            footer img { margin: 0px 10px; width: 30px; height: 30px; background-color: white; border-radius: 5px; cursor: pointer; } 
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="store.html">STORE</a> </li>
+                <li> <a href="about.html">ABOUT</a> </li>
+            </ul>
+
+            <h1>The Generics</h1>
+
+            <button> <a href="store.html" target="_blank">Get our Latest Album</a> </button>
+            <img src="icons/live.png" alt="Playicon" title="Playicon">
+
+        </header>
+
+        <section>
+            <h2>TOUR</h2>
+
+            <table id="tickets">
+                
+                <caption> <a href="#tickets">Grab your tickets now!!!</a> </caption>
+
+                <thead>
+                    <th>DATE</th>
+                    <th>STATE</th>
+                    <th>VENUE</th>
+                    <th>TICKETS</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>JULY 16 </td>
+                        <td>DETROIT MI</td>
+                        <td>DTE ENERGY MUSIC THEATRE</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+    
+                    <tr>
+                        <td>JULY 19 </td>
+                        <td>TORONTO ON</td>
+                        <td>BJDWESLER STAGE</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+    
+                    <tr>
+                        <td>JULY 22 </td>
+                        <td>BRISTOW VA</td>
+                        <td>JUGGY LUEE LIVE</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+    
+                    <tr>
+                        <td>JULY 29 </td>
+                        <td>PHOENIX AZ</td>
+                        <td>AK-CHIN PAVILON</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+    
+                    <tr>
+                        <td>AUG 2 </td>
+                        <td>LAS VEGAS NV</td>
+                        <td>T-MOBILE ARENA</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+    
+                    <tr>
+                        <td>AUG 7 </td>
+                        <td>CONCORD CA</td>
+                        <td>CONCORD PAVILON</td>
+                        <td> <button>BUY TICKETS</button> </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+
+        <footer>
+            <p>The Generics</p>
+            <div>
+                <a href="spotify.com" target="_blank"> <img src="icons/spotify logo.png"> </a>
+                <a href="twitter.com" target="_blank"> <img src="icons/twitter logo.png"> </a>
+                <a href="facebook.com" target="_blank"> <img src="icons/facebook logo.png"> </a>
+            </div>
+        </footer>
+    </body>
+</html>

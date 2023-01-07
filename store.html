@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="this is the generics bandpage">
+        <meta name="keywords" content="geneics,bandpage">
+        <meta name="author" content="John Doe">
+
+        <style>
+        
+            @font-face { font-family: "myfont"; src: url(fonts/ROCKYAOE.TTF); }
+            @font-face { font-family: font1; src: url("fonts/1.ttf"); }
+            @font-face { font-family: font2; src: url("fonts/2.ttf"); }
+            @font-face { font-family: font3; src: url("fonts/3.ttf"); }
+           
+            * { font-family: Arial; padding: 0px; margin: 0px; box-sizing: border-box; }
+
+            header { height: 180px; border: none; background-image: url("images/2.jpg"); background-blend-mode: multiply; }
+            header ul { text-align: center; border-bottom: 1px solid white; }
+            header ul li { display: inline-block; margin: 15px 25px; }
+            header ul li a { color: white; text-decoration: none; font-size: 20px; padding: 10px 20px; }
+            header ul li a:hover { background-color: white; color: rgb(114, 64, 194); }
+
+            header h1 { font-family: 'myfont'; font-size: 80px; font-weight: normal; letter-spacing: 10px; text-align: center; color: white; }
+
+            section { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
+            .sectiondiv1 { height: 50px; margin-top: 30px; margin-bottom: 30px; color: black; border-width: 0px; font-family: 'font1'; font-size: 40px; font-weight: bold; }
+            .sectiondiv2 { width: 50%; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 150px; row-gap: 50px; }
+            .sectiondiv2 div { height: 280px; border-width: 0px; }
+            .sectiondiv2 div img { width: 100%; height: 75%;  border-radius: 5px; }
+            .p1 { font-size: 18px; font-weight: bold; }
+            .p2 { font-size: 18px; display: inline-block; }
+            .sectiondiv2 div button { font-size: 17.5px; padding: 5px 10px; background-color: rgb(10,102,194); color: white; border-width: 0px; border-radius: 5px; cursor: pointer; }
+
+            .sectiondiv3 {font-family: Arial; height: 250px; border-width: 0px; }
+            .cartdiv1,.cartdiv2,.cartdiv3,.cartdiv4 { height: 25%; border-bottom: solid black; }
+            .cartdiv1 { display: flex; column-gap: 130px; align-items: center; }
+            .cartdiv1 p { font-family: Arial; font-size: 18px; font-weight: bold; }
+
+            .cartdiv2 { display: flex; align-items: center; }
+            .itemdiv { width: 170px; height: 99%; border-width: 0px; padding: 5px 0px; }
+            .itemdiv img { width: 50px; height: 100%; display: inline-block; vertical-align: middle; margin-right: 10px; }
+            .itemdiv p { display: inline-block; font-size: 20px; }
+            .pricediv { width: 190px; border-width: 0px; font-size: 20px; font-weight: bold; }
+            .quantitydiv { height: 100%; border-width: 0px; padding: 3px 0px; }
+            .quantitydiv input  { width: 30px; border: 2px solid blue; border-radius: 3px; vertical-align: -100%; }
+            .quantitydiv button { background-color: darkred; color: white; font-size: 14px; border-width: 0px; padding: 5px; border-radius: 5px; vertical-align: -100%; }
+
+            .cartdiv4 { font-size: 25px; float: right; padding: 15px 10px; }
+            .purchase { font-size: 25px; font-weight: bold; background-color: rgb(10,102,194); color: white; margin-top: 30px; padding: 20px 40px; border-radius: 10px; cursor: pointer; }
+            
+
+            footer { background-color: darkslateblue; display: flex; justify-content: space-between; align-items: center; }
+            footer p { font-family: 'myfont'; font-size: 50px; color: white; }
+            footer div { width: 200px; }
+            footer img { margin: 0px 10px; width: 30px; height: 30px; background-color: white; border-radius: 5px; cursor: pointer; } 
+            
+            @media (max-width: 500px) {
+            .sectiondiv2 { width: 450px; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 50px; row-gap: 50px; padding: 0px 30px; }
+            .sectiondiv2 div { height: 280px; border-width: 0px; }
+
+            .div1 { color: #f3f3f3; font-family: Arial; font-size: 30px; font-weight: bold; }
+            .div2 li { display: inline-block; margin-right: 15px; }
+            .div2 li a img { width: 30px; }
+            }
+
+            @media (min-width: 501px) and (max-width: 600px) {
+            .sectiondiv2 { width: 500px; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 50px; row-gap: 50px; padding: 0px 30px; }
+            .sectiondiv2 div { height: 280px; border-width: 0px; }
+
+            .div1 { color: #f3f3f3; font-family: Arial; font-size: 30px; font-weight: bold; }
+            .div2 li { display: inline-block; margin-right: 15px; }
+            .div2 li a img { width: 30px; }
+            } 
+
+            @media (min-width: 601px) and (max-width: 800px) {
+            .sectiondiv2 { width: 550px; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 100px; row-gap: 50px; padding: 0px 30px; }
+            }
+
+            @media (min-width: 801px) and (max-width: 1000px) {
+            .sectiondiv2 { width: 600px; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 130px; row-gap: 50px; padding: 0px 30px; }
+            }
+
+            @media (min-width: 1001px) /*and (max-width: 1200px)*/ {
+            .sectiondiv2 { width: 700px; border-width: 0px; text-align: center;  display: grid; grid-template-columns: 1fr 1fr; column-gap: 150px; row-gap: 50px; padding: 0px 30px; }
+            }
+            
+        </style>
+    </head>
+
+    <body lang="en">
+        <header>
+            <ul>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="store.html">STORE</a> </li>
+                <li> <a href="about.html">ABOUT</a> </li>
+            </ul>
+
+            <h1>The Generics</h1>
+
+        </header>
+
+        <section>
+            <div class="sectiondiv1">MUSIC</div>
+            <div class="sectiondiv2">
+                <div>
+                    <p class="p1">Album 1</p>
+                    <img src="images/9.jpg">
+                    <p class="p2">$50.20</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <p class="p1">Album 2</p>
+                    <img src="images/1.jpg">
+                    <p class="p2">$30.18</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <p class="p1">Album 3</p>
+                    <img src="images/4.jpg">
+                    <p class="p2">$60.12</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <p class="p1">Album 4</p>
+                    <img src="images/5.jpg">
+                    <p class="p2">$40.50</p>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="sectiondiv1">MERCH</div>
+
+            <div class="sectiondiv2">
+                <div>
+                    <p class="p1">T-Shirt</p>
+                    <img src="images/7.jpg">
+                    <p class="p2">$50.20</p>
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <p class="p1">Coffee cup</p>
+                    <img src="images/8.jpg">
+                    <p class="p2">$60.12</p>
+                    <button>ADD TO CART</button>
+                </div>
+           </div>
+
+            <div class="sectiondiv1">CART</div>
+            <div class="sectiondiv3">
+                <div class="cartdiv1">
+                    <p>ITEM</p>
+                    <p>PRICE</p>
+                    <p>QUANTITY</p>
+                </div>
+                <div class="cartdiv2">
+                    <div class="itemdiv">
+                        <img src="images/7.jpg" title="Item1Pic" alt="Item1Pic">
+                        <p>T-shirt</p>
+                    </div>
+                    <div class="pricediv">$19.99</div>
+                    <div class="quantitydiv">
+                        <input type="number" max="10" min="1">
+                        <button>REMOVE</button>
+                    </div>
+                </div>
+                <div class="cartdiv2">
+                    <div class="itemdiv">
+                        <img src="images/9.jpg" title="Item1Pic" alt="Item1Pic">
+                        <p>Album 3</p>
+                    </div>
+                    <div class="pricediv">$10.80</div>
+                    <div class="quantitydiv">
+                        <input type="number" max="10" min="1">
+                        <button>REMOVE</button>
+                    </div>
+                </div>
+                <div class="cartdiv4"><strong>TOTAL:</strong>&nbsp&nbsp&nbsp&nbsp&nbsp$30.97</div>
+            </div>
+            <div class="purchase">PURCHASE</div>
+        </section>
+
+        <footer>
+            <p>The Generics</p>
+            <div>
+                <a href="spotify.com" target="_blank"> <img src="icons/spotify logo.png"> </a>
+                <a href="twitter.com" target="_blank"> <img src="icons/twitter logo.png"> </a>
+                <a href="facebook.com" target="_blank"> <img src="icons/facebook logo.png"> </a>
+            </div>
+        </footer>
+    </body>
+</htm>
